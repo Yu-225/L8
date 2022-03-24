@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    background-color: #cccccc;
+    font-family: comic sans ms;
+}
+
+hr {
+    height: 1px;
+    border-radius: 100%;
+    color: gray;
+    background-color:gray;
+    width: 80%;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0, 0, 200);
+}
+a:hover {
+    text-decoration: underline;
+    color: rgb(0, 0, 111);
+
+}
+
+
+.container {
+    display: grid;
+    text-align: center;
+    grid-template-areas: 
+        'header header header header header header'
+        'left-menu main main main main data'
+        'footer footer footer footer footer footer';
+    grid-gap: 10px;
+    width: 100%;
+
+}
+
+.container div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    border-radius: 3px;
+}
+
+.header {
+    grid-area: header;
+    height: 100px;
+}
+.left-menu {
+    grid-area: left-menu;
+    width: 300px;
+    margin-left: -250px;
+    transition: 0.5s;
+}
+.left-menu:hover {
+    margin-left: 0px;
+}
+
+.main {
+    grid-area: main;
+}
+.data {
+    grid-area: data;
+    width: 300px;
+}
+.data div {
+    padding: 15px;
+}
+
+.footer {
+    grid-area: footer;
+    height: 100px;
+}
+
+
+.qu {
+    margin-left: 20%;
+    margin-right: 10%;
+    border-left: 3px solid blue;
+}
+
+
+
+.news {
+    padding: 10px;
+    text-align: left;
+}
+.news .ch {
+    float: left;
+    width: 100%;
+    border-radius: 3px;
+}
+.news .sc {
+    float: left;
+    width: 42%;
+
+}
+.news .ava {
+    width: 150px;
+    float: left;
+}
+
+
+.rotated {
+    margin-top: 200px;
+    margin: 100px 200px 1px 125px;
+    transform: rotate(90deg);
+    width: 300px;
+
+}
